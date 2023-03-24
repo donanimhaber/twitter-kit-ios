@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euxo pipefail
+
 MODULE_NAME=${1:?"Must set module name"}
 PROJ_DIR="$(cd $(dirname $0) && pwd)"
 WORKING_DIR="${PROJ_DIR}/${MODULE_NAME}"
@@ -26,13 +28,13 @@ fi
 
 PRODUCTS_DIR="${PROJ_DIR}/Products"
 CART_DIR="${WORKING_DIR}/Carthage"
-ZIP_PATH="${PRODUCTS_DIR}/${MODULE_NAME}.zip"
-TEMP_FRAMEWORK_PATH="${WORKING_DIR}/${MODULE_NAME}.framework.zip"
+ZIP_PATH="${PRODUCTS_DIR}/${MODULE_NAME}.xcframework.zip"
+TEMP_FRAMEWORK_PATH="${WORKING_DIR}/${MODULE_NAME}.xcframework.zip"
 
 cd "${WORKING_DIR}"
 
-carthage build --platform iOS --no-skip-current "${MODULE_NAME}"
-carthage archive
+carthage build --platform iOS --no-skip-current "${MODULE_NAME}" --use-xcframeworks
+(cd $CART_DIR/Build; zip -r $TEMP_FRAMEWORK_PATH $MODULE_NAME.xcframework)
 
 if [ ! -f "${TEMP_FRAMEWORK_PATH}" ]; then
     echo "${TEMP_FRAMEWORK_PATH} does not exist"

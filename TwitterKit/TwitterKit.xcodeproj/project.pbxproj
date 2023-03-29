@@ -3287,7 +3287,7 @@
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -3303,7 +3303,7 @@
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

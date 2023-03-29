@@ -17,7 +17,7 @@ DEBUG_INFORMATION_FORMAT = dwarf
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 
 // Deployment
-IPHONEOS_DEPLOYMENT_TARGET = 9.0
+IPHONEOS_DEPLOYMENT_TARGET = 11.0
 
 // Linking
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks

@@ -715,6 +715,7 @@
 				TargetAttributes = {
 					3D12C6E01EA6103D00DB2B3A = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZH24UJT6KU;
 					};
 					BFBE027B1E245036007A246A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -722,13 +723,13 @@
 					};
 					BFE95FEB1DAC2E1B00638749 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9YG77X724H;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = ZH24UJT6KU;
+						ProvisioningStyle = Automatic;
 					};
 					BFE95FF41DAC2E1B00638749 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9YG77X724H;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = ZH24UJT6KU;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -737,6 +738,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = BFE95FE21DAC2E1B00638749;
@@ -906,6 +908,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				ENABLE_BITCODE = YES;
 			};
 			name = Debug;
 		};
@@ -913,6 +917,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				ENABLE_BITCODE = YES;
 			};
 			name = Release;
 		};
@@ -923,7 +929,7 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 			};
 			name = Debug;
 		};
@@ -934,7 +940,7 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 			};
 			name = Release;
 		};
@@ -943,6 +949,7 @@
 			baseConfigurationReference = AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
+				ENABLE_BITCODE = YES;
 			};
 			name = Debug;
 		};
@@ -951,6 +958,7 @@
 			baseConfigurationReference = AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
+				ENABLE_BITCODE = YES;
 			};
 			name = Release;
 		};
@@ -961,7 +969,11 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				ENABLE_BITCODE = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -972,7 +984,11 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				ENABLE_BITCODE = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -980,6 +996,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -987,6 +1007,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

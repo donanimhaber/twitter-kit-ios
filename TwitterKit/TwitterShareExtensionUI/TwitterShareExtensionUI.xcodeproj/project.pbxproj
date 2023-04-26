@@ -715,7 +715,7 @@
 				TargetAttributes = {
 					3D12C6E01EA6103D00DB2B3A = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = ZH24UJT6KU;
+						ProvisioningStyle = Manual;
 					};
 					BFBE027B1E245036007A246A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -723,13 +723,11 @@
 					};
 					BFE95FEB1DAC2E1B00638749 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ZH24UJT6KU;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					BFE95FF41DAC2E1B00638749 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ZH24UJT6KU;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -908,8 +906,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -917,8 +917,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -970,8 +972,8 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -985,8 +987,8 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -997,8 +999,8 @@
 			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -1008,8 +1010,8 @@
 			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH24UJT6KU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
